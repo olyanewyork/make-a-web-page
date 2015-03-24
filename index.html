@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - A Pen by  Olga</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<body>
+<h1>Olga's Notes</h1>
+ <div class="lesson">
+  <h2>Lesson 1: The Basics of the Web and HTML</h2>
+  </div>
+    <div class="concept">
+      <div class="concept-title">
+      How the Web Works
+           </div>
+      <div>
+<p>
+  The web is a bunch of computers that communicate
+  with each other. When a person goes to a web
+  page like www.google.com, their computer sends
+  a <em>HTTP Request</em> to a <em>server</em>. 
+        </p>
+  <p>The
+  server finds the appropriate HTML document and sends
+  it back to the user's computer where a <em>web browser</em>
+  interprets the page and displays it on the user's screen.
+  <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/e-48329854/m-48480496">This video</a>
+  does a good job of explaining.
+</p>
+   </div>
+<div class="concept-title">
+HTML
+     </div>
+  <div>
+<p>HTML stands for <em>Hypertext Markup Language.</em> HTML documents form the majority of the
+  content on the web. HTML documents contain <em>text content</em> which describes "what you see"
+  and <em>markup</em> which describes "how it looks".
+  <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48724340"> This
+  video</a> gives a good overview.
+</p>
+   </div>
+   <div class="concept-title">
+Tags and Elements
+      </div>
+      <div>
+<p>HTML documents are made of HTML <b>elements</b>. When
+  writing HTML, we tell browsers the type of each element by using HTML <b>tags</b>.
+  <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48723444">This video</a>
+  explains the distinction well.
+</p>
+   </div>
+<div class="concept-title">
+  Why Computers are Stupid
+      </div>
+      <div>
+<p>Computers are stupid because they interpret instructions
+  literally. This makes them very unforgiving since a
+  small mistake by a programmer can cause huge problems
+  in a program.
+</p>
+   </div>
+<div class="concept-title">
+Inline vs Block Elements
+  </div>
+ <div>
+<p>HTML elements are either <b>inline</b> or <b>block</b>. Block
+  elements form an "invisible box" around the content inside of
+  them.
+</p>
+   </div>
+  </div>
+<div class="lesson">
+    <h2>Lesson 2: Creating a Structured Document with HTML</h2>
+</div>
+    <div class="concept">
+<div class="concept-title"> 
+  Three languages of the web development: HTML,CSS and Java
+  </div>
+  <div>
+<p> 
+  <br>
+  * HTML and CSS are both languages that will be used in this course.
+    </br>
+      <br>
+* HTML controls the structure of the page.
+      </br>
+<br>
+  * CSS stands for <em> Cascading Style Sheets</em>. It controls the style of the page. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference"> CSS Reference Guide</a>. "Cascading" means that rules are applied not only to the elements they directly match, but also to all of those elements' child elements. However, if a child element has multiple, overlapping rules defined for it, the more specific rule takes effect. <a href="https://css-tricks.com/how-css-selectors-work/"> How CSS Selectors Work </a>
+  </br>
+<br> 
+* When programmers talk about the "DOM" (<em> Document Object Model</em>) they are talking about the tree-like structure of a page. 
+</br>
+</p>
+</div>
+<div class="concept-title">
+      Developer Tools (in the Browser)
+      </div>
+<div>
+      <p>
+        HTML elements are either <b>inline</b> or <b>block</b>.
+        Block elements form an "invisible box" around the
+        content inside of them.
+      </p>
+    </div>
+    <div class="concept-title">
+      The "tree-like structure" of HTML
+      </div>
+<div>
+      <p>
+        The "tree-like structure" comes from the fact that HTML
+        elements can have other elements inside of them. You can
+        draw this relationship like a family tree. My mother had
+        multiple children. So did her mother, and so on...
+        <br>
+        In a browser, this structure shows up as a series of
+        nested boxes. There are boxes inside of boxes inside of
+        boxes, and so on...
+      </p>
+    </div>
+    <div class="concept-title">
+      The relationship between indented HTML and boxes
+</div>
+      <div>
+      <p>
+        When you read an HTML document as <em>text</em>, you see a wave
+        of changing indentations going up and down the left side
+        of the document. The more indented an element is, the more
+        deeply nested it's corresponding "box" is.
+      </p>
+    </div>
+    <div class="concept-title">
+      Text Editors (for programming
+      </div>
+<div>
+      <p>
+        When writing code, programmers use special text editors (like
+        Sublime Text for example). These editors make the programmer's
+        life easier. For example, some text editors will automatically
+        generate a closing HTML tag when you write an opening tag.
+      </p>
+    </div>
+<div class="concept-title">
+How do I include CSS Styling in my web page?
+  </div>
+<div>
+  <p>Method 1: write CSS in the <b>head</b> of your HTML. This method is good for very small projects (like what you'd do in scratchpad.io). To do this: 1. At the top of your HTML document, add a <b>head</b> element. 2. Inside the <b>head</b> element, add a <b>style</b> element. 3. Write your CSS in the <b>style</b> element and then put the HTML for the rest of your page below.
+  </p>
+  <p>Method 2: Link your HTML to a separate CSS file. 
+    This adds another step, but it lets you stay more organized when working on larger projects. To do this: 1. Write all of your structural HTML in one file (let's call it main.html). 2. In a separate file (let's call it main.css), put all of your CSS code. 3. Add a <b>head</b> element to the top of your HTML. 4. Add a link tag inside the head element. Since link is a "void tag" you don't need to add a closing /link. 5. Add the following attributes to your link: * rel="stylesheet" * type="text/css" * href="main.css"
+  </p>
+   <p>Method 3: Write your style inline with your HTML. This is generally a very bad idea because it leads to lots of repeated code. 
+  </p>
+</div>
+ <div class="concept-title">
+    Is your CSS correct? 
+</div> 
+<div>
+  <p> To verify HTML: <a href="http://validator.w3.org/#validate_by_input">http://validator.w3.org/#validate_by_input </a>;
+    To verify CSS: <a href="http://jigsaw.w3.org/css-validator/#validate_by_input">http://jigsaw.w3.org/css-validator/#validate_by_input</a>
+    </p>
+</div>
+</body>
+
+</body>
+
+</html>
