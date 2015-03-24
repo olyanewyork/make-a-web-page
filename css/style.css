@@ -1,0 +1,26 @@
+h1 {
+    color: pink;
+    text-align: center;
+    font-style: italic;
+}
+
+body{
+  background-color: white
+}
+
+.lesson {
+    background-color: pink;
+    color: grey;
+    font-style: italic;
+}
+
+.concept {
+    background-color: white;
+}
+
+.concept-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: grey
+}
+
